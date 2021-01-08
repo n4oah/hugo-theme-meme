@@ -7,6 +7,8 @@ if (userPrefers === 'dark') {
     changeModeMeta('dark');
 } else if (userPrefers === 'light') {
     changeModeMeta('light');
+} else {
+    changeModeMeta('light');
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
