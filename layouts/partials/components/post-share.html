@@ -113,6 +113,16 @@
                 </div>
             {{ end }}
 
+            {{ if .Site.Params.shareOnKakao }}
+                <div class="share-item kakao">
+                    <div class="kakao-container" title="{{ i18n "shareViaTitle" }}{{ i18n "kakao" }}">
+                        {{- partial "utils/icon.html" (dict "$" . "name" "kakao" "class" "kakao-icon") -}}
+                        <div id="kakao-img"></div>
+                    </div>
+                    <!-- {{ partial "third-party/qrcode-generator.html" . }} -->
+                </div>
+            {{ end }}
+
         </div>
 
     </div>
