@@ -3,7 +3,8 @@
     margin: 2rem 0;
     pre {
         margin: 0 !important;
-        max-height: unset;
+        // max-height: unset;
+	max-height: none;
     }
     .lntd pre {
         background-color: unset;
@@ -31,7 +32,8 @@ span.lnt {
 
 @if ($enableOverflowY) {
     .lntable, .highlight > pre {
-        max-height: $maxHeight;
+        // max-height: $maxHeight;
+        max-height: none;;
     }
 }
 
